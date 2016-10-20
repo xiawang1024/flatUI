@@ -24,14 +24,29 @@
         .myApp{
           display: flex;
         }
-        .myDate,.myWeather{
-          height: 160px;background-color: orange;flex: 1;
+        .state{
+          margin-right:4px;
+        }
+        .news{
+          flex:1;
+          background-color:#22b658;
+        }
+        .news{
+         padding-left:30px;
+         padding-top:30px;
+         color:#fff;
+        }
+        .news-icon{
+          padding-right:20px;margin-top:15px;
         }
         .bg{
-          position: absolute;top:0;left: 0;right: 0;bottom: 0;background-color: #F44336;z-index: -10;
+          position: absolute;top:0;left: 0;right: 0;bottom: 0;background-color: #fff;z-index: -10;
         }
         .item img{
           width: 100%;
+        }
+        #myAudio{
+          width:100%;background-color:#fff;
         }
       </style>
       
@@ -96,9 +111,66 @@
       </div>
 
       <div class="myApp">
-        <div class="myDate"></div>
-        <div class="myWeather"></div>
+        <div class="state pull-left">
+            <img src="img/state.jpg">
+        </div>
+        <div class="news pull-right">
+          <div>新闻发布会</div>
+          <div>news conference</div>
+          <span class="glyphicon glyphicon-eye-open pull-right news-icon"></span>
+        </div>
       </div>
+      <div></div>
+      <div >
+         <audio  id="myAudio" controls autoplay class="hidden">
+            <source src="src/song.mp3" type="audio/mpeg">
+            Audio player not available.
+          </audio>
+      </div>
+      <!--<div class="col-xs-12" style="padding:0;margin:0;border-radius: 0;">
+          <div class="todo">
+            <div class="todo-search">
+              <input class="todo-search-field" type="search" value="" placeholder="Search" />
+            </div>
+            <ul>
+              <li class="todo-done">
+                <div class="todo-icon fui-user"></div>
+                <div class="todo-content">
+                  <h4 class="todo-name">
+                    会面 <strong>W先生</strong> at <strong>6pm</strong>
+                  </h4>
+                  Times Square
+                </div>
+              </li>
+              <li>
+                <div class="todo-icon fui-list"></div>
+                <div class="todo-content">
+                  <h4 class="todo-name">
+                    Chat with <strong>V.Kudinov</strong>
+                  </h4>
+                  Skype conference an 9 am
+                </div>
+              </li>
+              <li>
+                <div class="todo-icon fui-eye"></div>
+                <div class="todo-content">
+                  <h4 class="todo-name">
+                    Watch <strong>Iron Man</strong>
+                  </h4>
+                  1998 Broadway
+                </div>
+              </li>
+              <li>
+                <div class="todo-icon fui-time"></div>
+                <div class="todo-content">
+                  <h4 class="todo-name">
+                    Fix bug on a <strong>Website</strong>
+                  </h4>
+                  As soon as possible
+                </div>
+              </li>
+            </ul>
+          </div><!-- /.todo -->
       <!-- jQuery (necessary for Flat UI's JavaScript plugins) -->
       <script src="js/vendor/jquery.min.js"></script>
       <!-- Include all compiled plugins (below), or include individual files as needed -->
