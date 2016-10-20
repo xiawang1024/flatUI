@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Flat UI Free 101 Template</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Loading Bootstrap -->
+  <link href="css/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Loading Flat UI -->
+  <link href="css/flat-ui.min.css" rel="stylesheet">
+  <link rel="shortcut icon" href="img/favicon.ico">
+  <script src="http://apps.bdimg.com/libs/angular.js/1.4.6/angular.min.js"></script>
+  <!-- HTML5 shim, for IE6-8 support of HTML5 elements. All other JS at the end of file. -->
+    <!--[if lt IE 9]>
+      <script src="js/vendor/html5shiv.js"></script>
+      <script src="js/vendor/respond.min.js"></script>
+      <![endif]-->
+      <style type="text/css">
+
+        .navbar{
+          margin-bottom: 0;
+          border-radius: 0;
+        }
+        .myApp{
+          display: flex;
+        }
+        .myDate,.myWeather{
+          height: 160px;background-color: orange;flex: 1;
+        }
+        .bg{
+          position: absolute;top:0;left: 0;right: 0;bottom: 0;background-color: #F44336;z-index: -10;
+        }
+        .item img{
+          width: 100%;
+        }
+      </style>
+      
+    </head>
+    <body>
+      <div class="bg"></div>
+      <!-- /.container -->
+      <nav class="navbar navbar-inverse navbar-embossed" role="navigation">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-9">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">冰糖先生</a>
+          </div>
+          <div class="navbar-collapse collapse" id="navbar-collapse-9">
+            <form class="navbar-form navbar-right" role="form">
+              <div class="form-group">
+                <input type="text" placeholder="邮箱/手机号/账号" class="form-control">
+              </div>
+              <div class="form-group">
+                <input type="password" placeholder="密码" class="form-control">
+              </div>
+              <button type="submit" class="btn btn-success">登录</button>
+              <button type="submit" class="btn btn-danger">注册</button>
+            </form>
+
+          </div><!--/.navbar-collapse -->
+        </div>
+      </nav>
+      <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner" role="listbox">
+          <div class="item active">
+            <img src="img/1.jpg" alt="..." class="img-responsive">
+           <!--  <div class="carousel-caption">
+              ...
+            </div> -->
+          </div>
+          <div class="item">
+            <img src="img/2.jpg" alt="..." class="img-responsive">
+           <!--  <div class="carousel-caption">
+              ...
+            </div> -->
+          </div>
+          <div class="item">
+            <img src="img/3.jpg" alt="..." class="img-responsive">
+           <!--  <div class="carousel-caption">
+              ...
+            </div> -->
+          </div>
+          <div class="item">
+            <img src="img/4.jpg" alt="..." class="img-responsive">
+           <!--  <div class="carousel-caption">
+              ...
+            </div> -->
+          </div>
+        </div>
+      </div>
+
+      <div class="myApp">
+        <div class="myDate"></div>
+        <div class="myWeather"></div>
+      </div>
+      <!-- jQuery (necessary for Flat UI's JavaScript plugins) -->
+      <script src="js/vendor/jquery.min.js"></script>
+      <!-- Include all compiled plugins (below), or include individual files as needed -->
+      <script src="js/vendor/video.js"></script>
+      <script src="js/flat-ui.min.js"></script>
+      <script src="js/application.js"></script>
+      <script src="js/unslider-min.js"></script>
+      <script type="text/javascript">
+      $('.carousel').carousel();
+      </script>
+    </body>
+    </html>
